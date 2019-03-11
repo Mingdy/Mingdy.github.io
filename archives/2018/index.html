@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>FlexBox 能做什么 | Mingdy</title>
+  <title>Archives: 2018 | Mingdy</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -167,118 +167,69 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      
-<section id="intro">
-    <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2016-08-01T14:22:00.000Z" itemprop="datePublished">
-          2016-08-01
-      </time>
-    
-</span>
-                <h1>FlexBox 能做什么</h1>
+      <!-- ============================ Hero Image =========================== -->
+
+<section id="hero" class="scrollme">
+    <div class="container-fluid element-img" style="background: url(/img/2.jpeg) no-repeat center center fixed;background-size: cover">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                    <div>
+                        
+                        <h2></h2>
+                        <p></p>
+                        
+                        <h2></h2>
+                        <p></p>
+                        
+
+                    </div>
+                </div>
             </div>
+            <!-- // .col-md-12 -->
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<p>Flexbox(伸缩布局盒) 是 CSS3 中一个新的布局模式，那么Flexbox能做什么，什么时候用得到，在什么情况下才用得到？Flexnbox怎么用，它是怎么工作的？我相信此时的我状态是一脸懵逼<br><a id="more"></a></p>
-<h4 id="FlexBox的兼容性："><a href="#FlexBox的兼容性：" class="headerlink" title="FlexBox的兼容性："></a>FlexBox的兼容性：</h4><p>谈起FlexBox(伸缩布局盒)相信大家都知道这个属性，同样也相信不少同学也在项目中用到，或者在用，也或许就像我一样只是了解，由于项目的需求，对兼容性的要求，放弃在项目中使用Flexbox布局，平常也就自己闲下来写写demo。所以对此属性仅仅我只能说是了解，至于我为什么要写这篇总结？很简单，下次跟别人吹牛逼谈到flexbox属性的时候我直接打开我的blog一目了然。 </p>
-<h5 id="不如还是先看看Flexbox规范时间表吧："><a href="#不如还是先看看Flexbox规范时间表吧：" class="headerlink" title="不如还是先看看Flexbox规范时间表吧："></a>不如还是先看看Flexbox规范时间表吧：</h5><ul>
-<li>2009年7月 工作草案 (display: box;)</li>
-<li>2011年3月 工作草案 (display: flexbox;)</li>
-<li>2011年11月 工作草案 (display: flexbox;)</li>
-<li>2012年3月 工作草案 (display: flexbox;)</li>
-<li>2012年6月 工作草案 (display: flex;)</li>
-<li>2012年9月 候选推荐 (display: flex;)</li>
-</ul>
-<p>还是废话不多说了，下面一张图让我们来看看Flexbox的兼容性：</p>
-<p><img src="http://o6njjmaoj.bkt.clouddn.com/flexbox.png" alt="flexbox"></p>
-<p>在这里给前端开发的小伙伴提供一个测试兼容性很不错的(见:<a href="http://caniuse.com/" target="_blank" rel="noopener">url:http://caniuse.com</a> 挺好实用的。</p>
-<p>从上图可以一目了然的看到Flexbox对浏览器的支持度，所以当撇开低版本的兼容性时候，我们可以考虑用其flexbox伸缩盒模型来布局。</p>
-<h4 id="FlexBox-属性值？"><a href="#FlexBox-属性值？" class="headerlink" title="FlexBox 属性值？"></a>FlexBox 属性值？</h4><p>谈到Flexbox属性，说说自己的经历吧，从CSS 2.0 发展到如今的 CSS 3.0 慢慢开始被浏览器的认可，一开始听到<code>flexbox</code>这个伸缩盒模型布局时，一脸懵逼，到底是什么梗？…….然后默默的打开浏览器谷歌or百度看看是到底是什么梗，当时看资料时，我更是一脸懵逼，什么鬼，好复杂呀(Ps:此时我已经脑补了好几次当时的画面，这是一个悲伤的故事)；</p>
-<p>下面来看看两张具体FlexBox的属性值汇总图，至于为什么是两张，从上面开始介绍过，从旧到新！具体如下：</p>
-<p><img src="http://o6njjmaoj.bkt.clouddn.com/Flex%20box%28%E6%97%A7%29.png" alt="flexbox:旧"></p>
-<p><img src="http://o6njjmaoj.bkt.clouddn.com/Flex%20box%28%E6%96%B0%29.png" alt="flexbox:新"></p>
-<h4 id="FlexBox能做什么？"><a href="#FlexBox能做什么？" class="headerlink" title="FlexBox能做什么？"></a>FlexBox能做什么？</h4><p>既然上面说到了<code>flexbox</code> 的兼容性，以及它的属性值，同样的也相信不少同学对伸缩盒布局开始有一些了解，那么它能做什么呢？</p>
-<p>Flexbox Layout(Flexible Box)模块，<a href="https://www.w3.org/TR/css-flexbox/" target="_blank" rel="noopener">W3C官方称为CSS弹性盒子布局</a>，是在CSS3中定义的一种新的布局模式。Flexbox可以控制在容器内的子元素的对齐方式、排列方式以及排序顺序，即使其子元素的尺寸是未知或者动态的情况下。弹性容器的主要特点就是能够调整其子元素的宽度或者高度以使其能在不同分辨率的屏幕下能用最好的方式去填充可用空间。</p>
-<p>Flex布局的主要思想是让容器能使其子元素的宽高（或其他属性）能够以最好的方式去填充可用空间（主要是去适应不同的设备跟分辨率）。一个Flex弹性盒子能让子元素填充可用空间或者为了阻止子元素超出区域而进行收缩。那么下面来看几个简单的flexbox demo:</p>
-<p>一个简单的<code>flexbox</code>九宫格布局 demo：</p>
-<iframe height="500px" scrolling="no" src="//codepen.io/Mingdy/embed/EyZmXW/?height=265&theme-id=0&default-tab=css,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="https://codepen.io/Mingdy/pen/EyZmXW/" target="_blank" rel="noopener">EyZmXW</a> by Mingdy (<a href="http://codepen.io/Mingdy" target="_blank" rel="noopener">@Mingdy</a>) on <a href="http://codepen.io" target="_blank" rel="noopener">CodePen</a>.<br></iframe>
-
-<p>如何用<code>flexbox</code>实现一个垂水平居中直居中 demo：</p>
-<iframe height="500px" scrolling="no" src="//codepen.io/Mingdy/embed/vKzQKP/?height=265&theme-id=0&default-tab=css,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/Mingdy/pen/vKzQKP/" target="_blank" rel="noopener">vKzQKP</a> by Mingdy (<a href="http://codepen.io/Mingdy" target="_blank" rel="noopener">@Mingdy</a>) on <a href="http://codepen.io" target="_blank" rel="noopener">CodePen</a>.<br></iframe>
-
-<p>如何用<code>flexbox</code>实现一个列表元素含ico布局 demo：</p>
-<p><code>这里是一个iframe由于网络的原因暂时未引入</code></p>
-<h4 id="文章最后："><a href="#文章最后：" class="headerlink" title="文章最后："></a>文章最后：</h4><p>本文纯属个人总结，之所整理下来，是因为我看到felxbox的强大以及相信flexbox布局在以后的移动端会用得越来越多的。CSS本是一个灵活的东西，在于自己如何巧用，对于flexbox的layout方法，接下来我也会慢慢的挖掘。</p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-        </div>
-        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
-    
-    <a class="pull-left" href="/2016/08/16/web-fontmin/" style="float: left;">
-        ← Web-Fontmin
-    </a>
-    
-    
-</nav>
-
-        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
-  /**
-   * 搜狐畅言
-   */
-
-  /*
-  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
-
-  window.onload = function () {
-    (function () {
-      var appid = 'cytXXXX';
-      var conf = 'prod_xxxxxxxxxxxxxxxxx';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      var loadJs = function (d, a, id) {
-        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
-        var b = document.createElement("script");
-        b.setAttribute("type", "text/javascript");
-        b.setAttribute("charset", "UTF-8");
-        b.setAttribute("src", d);
-        if (id) {
-          b.setAttribute("id", id);
-        }
-        if (typeof a === "function") {
-          if (window.attachEvent) {
-            b.onreadystatechange = function () {
-              var e = b.readyState;
-              if (e === "loaded" || e === "complete") {
-                b.onreadystatechange = null;
-                a()
-              }
-            }
-          } else {
-            b.onload = a
-          }
-        }
-        c.appendChild(b)
-      };
-
-      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
-        window.changyan.api.config({
-          appid: appid,
-          conf: conf
-        })
-      });
-    })();
-  }
-  */
-
-</script>
-</div>
+        <div class="herofade beige-dk"></div>
     </div>
 </section>
 
+<!-- Height spacing helper -->
+<div class="heightblock"></div>
+<!-- // End height spacing helper -->
 
+<!-- ============================ END Hero Image =========================== -->
+
+
+
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2018/03/19/使用Github,Hexo搭建个人博客网站/">使用Github,Hexo搭建个人博客网站</a></h4>
+                            
+                            <p><time datetime="2018-03-18T16:00:00.000Z"><a href="/2018/03/19/使用Github,Hexo搭建个人博客网站/">2018-03-19</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
+        </div>
+    </div>
+</section> 
+
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+        </div>
+    </div>
+</section>
       
 <!-- ============================ Footer =========================== -->
 

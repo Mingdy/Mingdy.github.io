@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>使用Github,Hexo搭建个人博客网站 | Mingdy</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Mingdy">
+    <meta name="author" content="Mingdy">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Mingdy" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="https://mingdy.github.io/" class="animsition-link">Mingdy</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Mingdy</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/Mingdy/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/heymingdy" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/mingdy.root" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="https://weibo.com/HeyMingdy" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2018-03-18T16:00:00.000Z" itemprop="datePublished">
+          2018-03-19
+      </time>
+    
+</span>
+                <h1>使用Github,Hexo搭建个人博客网站</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>效果展示：<a href="https://mingdy.github.io/" target="_blank" rel="noopener">Mingdy的博客</a></p>
+<ol>
+<li>准备工作</li>
+<li>搭建博客(远程与本地)</li>
+<li>发布博客</li>
+<li>更换主题</li>
+</ol>
+<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><h6 id="了解Hexo"><a href="#了解Hexo" class="headerlink" title="了解Hexo"></a>了解Hexo</h6><p><a href="http://hexo.io/" target="_blank" rel="noopener">Hexo</a>是高效的静态站点生成框架，她基于Node.js。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的标签插件来快速的插入特定形式的内容，而且相对于其他框架，Hexo在速度上也有很大优势。</p>
+<h4 id="搭建Node-js环境"><a href="#搭建Node-js环境" class="headerlink" title="搭建Node.js环境"></a>搭建Node.js环境</h4><p>我们了解到Hexo基于Node.js的，那么我们搭建博客网站首先需要安装Node.js环境。 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。</p>
+<p>下载地址：<a href="http://nodejs.cn/download" target="_blank" rel="noopener">http://nodejs.cn/download</a></p>
+<p>测试安装：命令行使用node -v 、npm -v，查看显示版本号即成功。</p>
+<h4 id="安装Hexo博客框架工具"><a href="#安装Hexo博客框架工具" class="headerlink" title="安装Hexo博客框架工具"></a>安装Hexo博客框架工具</h4><p>Hexo是一个建站工具，可以帮助我们快速生成基本的博客文件，安装它需要在控制台下使用如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>若报错，请尝试在命令前加上sudo</p>
+<h4 id="安装Git版本工具"><a href="#安装Git版本工具" class="headerlink" title="安装Git版本工具"></a>安装Git版本工具</h4><p>Git是目前世界上最流行的分布式版本控制系统，是的，没有之一。使用Git可以帮助我们把本地的网页和文章等内容提交到Gihub上，实现同步。<br>下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a><br>Windows系统需下载，Mac系统因为自带Git无需操作。<br>测试安装：git  - -version，查看显示版本号即成功。</p>
+<h4 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h4><p>gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。这里用到Github，是因为我们需要通过Github得到自己的博客网站域名，而且需要使用gitHub同步我们个人博客的相关文件。<br>注册地址：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a><br>注册流程：<a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a>，百度一下。</p>
+<p>注意：注册Github的时候一定要选择一个合适的名字，因为后来博客网站的域名也会用到这个名字。虽然Github用户名支持后期修改，但是还是会带来很多不必要的麻烦。github的使用在网上有很多教程，这里也就不再累述了。</p>
+<h4 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h4><h5 id="开启GitHub-Pages服务"><a href="#开启GitHub-Pages服务" class="headerlink" title="开启GitHub Pages服务"></a>开启GitHub Pages服务</h5><p>搭建我们的个人博客需要一个唯一的域名，当然我们可以申请购买一个域名来使用，但是在不是太必要的情况下，我们也可以通过Github Pages获得一个免费使用的域名，这需要我们在Github上新建一个仓库，如下：<br><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0ywsjn5p2j20lf0h4gnr.jpg" alt="Create a new repository"></p>
+<p>这个过程和建立普通的仓库没什么区别，关键在于新仓库的名字，一定要是UserName+“github.io”的形式。这也是之前强调的要起一个好的用户名的原因。这样之后我们最后的博客网站的链接就会是：<a href="https://mingdy.github.io/" target="_blank" rel="noopener">https://UserName.github.io</a>的形式。<br>注意：固定新仓库的名字格式并非必须，只是这样操作生成的博客域名比较短小简洁，另起他名生成博客域名会很冗长。</p>
+<p>点击Create Repository之后，随后选择Setting进入设置，找到Github Pages如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0ywvtmljfj20fi088myo.jpg" alt="Github Pages"></p>
+<p>这里我们需要点击Choose a theme任意选择一个选择主题，然后界面会跳转到仓库，我们看到有两个文件如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yx3mkaecj20s809smyw.jpg" alt="屏幕快照"></p>
+<p>此时若再查看setting，我们会看到开启GitHub Pages之后得到的域名如下：<br><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yx68an7sj20k50anq4b.jpg" alt="屏幕快照"></p>
+<p>现在我们就可以使用<a href="https://mingdy.github.io/" target="_blank" rel="noopener">https://UserName.github.io</a>,访问自己的博客网站了，打开链接我们会看到默认主题的个人博客样式如下(虽然有点点丑，是吧)：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yx83ftcij20pk0ha0ur.jpg" alt="屏幕快照"></p>
+<h4 id="创建本地博客站点"><a href="#创建本地博客站点" class="headerlink" title="创建本地博客站点"></a>创建本地博客站点</h4><p>上述的步骤相当于我们使用Github page，创建了一个默认的博客页，并且得到了一个可外部访问的域名。但是这个博客页很Low。我们的目的是创建自己个性化的博客网站，所以我们使用Hexo在本地先创建一个本地博客站点，优化后再把它部署到github上。接下来我们使用控制台命令在本地一个合适的位置创建博客站点文件夹如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init  myHexoBlog       //myHexoBlog是项目名</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxa3bjxyj20bg03nq37.jpg" alt="屏幕快照"></p>
+<p>下面来测试本地博客站点，在本地博客根目录下使用控制台命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g  //g是generetor的缩写，生成博客</span><br><span class="line"></span><br><span class="line">hexo s  //s是server的缩写，启动服务</span><br></pre></td></tr></table></figure>
+<p>此时打开浏览器，输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>, 我们将会看到Hexo自带默认主题显示的博客样式如下(呃，是好看了那么一点点)：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxf2s8a2j20py0cujyc.jpg" alt="屏幕快照"></p>
+<h4 id="同步Github-允许公共访问"><a href="#同步Github-允许公共访问" class="headerlink" title="同步Github,允许公共访问"></a>同步Github,允许公共访问</h4><p>在本地我们已经搭建了博客，但是还只能自己本地访问。若要别人也能看到，那就需要我们将其同步部署到GitHub上了。还记得我们之前准备的Github仓库吗，这里就要用到了。<br>首先找到我们的博客仓库，并拷贝仓库地址：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxhd570ij20rz09qjtc.jpg" alt="屏幕快照"></p>
+<p>然后修改本地博客目录的配置：<br>修改本地博客根目录下的_config.yml文件，修改deploy下的配置如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxkzfex4j20g204z74m.jpg" alt="屏幕快照"></p>
+<p>最后执行控制台命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git —save //安装部署插件</span><br><span class="line"></span><br><span class="line">hexo d //部署到github</span><br></pre></td></tr></table></figure></p>
+<p>现在，我们再次访问链接：<a href="https://mingdy.github.io/" target="_blank" rel="noopener">https://userName.github.io</a>，就会发现这里的界面和本地的一样了。如此一来我们搭建的个人博客网站就基本完成了。</p>
+<h4 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h4><p>激动人心的时候到了，终于可以发布自己的第一篇博客了。来尝试一下以下的步骤：<br>在本地博客文件夹根目录输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;我个人博客的第一篇博客，哈哈哈...&quot;</span><br><span class="line"></span><br><span class="line">hexo g   //生成网页</span><br><span class="line"></span><br><span class="line">hexo d  //部署到远端(github)</span><br></pre></td></tr></table></figure></p>
+<p>查看我们本地的博客文件夹，将会看到我们创建一个条新的博客文章：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxqdixilj20mu04f3z7.jpg" alt="屏幕快照"></p>
+<p>现在打开我们的博客网站：<a href="&quot;https://mingdy.github.io/&quot;">http://UserName.github.io</a>,会看到网页如下(显示可能会延时，不如先喝杯茶放松下吧)：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxr5i0jhj20su0actf9.jpg" alt="屏幕快照"></p>
+<p>这就是我们发布博客的方法啦，当然这里是为了演示，真正做的时候我们要找到_posts里的博客原文，先编辑内容，然后再部署到github上。</p>
+<h4 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h4><p>现在我们已经看见个人博客的雏形了，但是现在的博客网页一点也不高大上。为了让它看起来更美观一些，我们可以为其更换主题（当然也可以自己在默认主题下自己编写美化博客界面，可是我还不太会前端，以后再突破吧）。这里以使用github上的next主题为例：</p>
+<h4 id="创建next文件夹"><a href="#创建next文件夹" class="headerlink" title="创建next文件夹"></a>创建next文件夹</h4><p>切换到本地博客根目录下，在主题文件thems下创建一个新文件夹next存放即将下载的next主题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir themes/next</span><br></pre></td></tr></table></figure></p>
+<h4 id="下载主题Next"><a href="#下载主题Next" class="headerlink" title="下载主题Next"></a>下载主题Next</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -s [https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest](https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest) | grep tarball_url | cut -d &apos;&quot;&apos; -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+<p>此步骤可参考：<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></p>
+<p>下载成之后我们会看到next的主题已经存在thems里了如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxv48gh2j20h30653zi.jpg" alt="屏幕快照"></p>
+<h4 id="修改博客配置文件，更换主题配置"><a href="#修改博客配置文件，更换主题配置" class="headerlink" title="修改博客配置文件，更换主题配置"></a>修改博客配置文件，更换主题配置</h4><p>修改博客根目录(不是next主题)下的_config.yml文件，搜索theme字段，并将其值修改为next</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxwtiy6wj20jj030aa7.jpg" alt="屏幕快照"></p>
+<p>然后在控制台下输入如下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清理缓存</span><br><span class="line"></span><br><span class="line">hexo g    //重新生成博客代码</span><br><span class="line"></span><br><span class="line">hexo d   //部署到远端</span><br></pre></td></tr></table></figure></p>
+<p>再次打开我们的博客网站：<a href="https://mingdy.github.io/" target="_blank" rel="noopener">https://UserName.github.io</a>,将会看到更换主题后的博客网页如下：</p>
+<p><img src="http://ww1.sinaimg.cn/large/b45504c1gy1g0yxyw5ax0j20kb0ahzl5.jpg" alt="屏幕快照"></p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>有一种美，叫做新生。记录下每一个成长的点滴！</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2019/03/08/hello-world/" style="float: left;">
+        ← Hello World
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/08/16/web-fontmin/">
+        Web-Fontmin →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Mingdy. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//mingdy.github.io" style="color: #767D84">Mingdy</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/Mingdy/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/heymingdy" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/mingdy.root" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://weibo.com/HeyMingdy" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
